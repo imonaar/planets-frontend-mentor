@@ -1,0 +1,28 @@
+<header class="head">
+  <div class="head__wrapper">
+    <div class="head__inner">
+      <a href="/" aria-label="{{site.name}}"> The Planets </a>
+      <nav class="nav side-nav js-side-nav" aria-label="primary">
+        <ul class="nav__list side-nav__container">
+          {% for item in navigation.items %}
+          <li>
+            <a
+              class="nav-item"
+              href="{{item.url}}"
+              {{helpers.getLinkActiveState(item.url,
+              page.url)
+              |
+              safe}}
+            >
+              {{item.name}}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+      <!-- <button class="hamburger js-menu">
+        <img src="../../images/icon-hamburger.svg" alt="open side nav" />
+      </button> -->
+    </div>
+  </div>
+</header>

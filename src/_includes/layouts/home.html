@@ -1,0 +1,51 @@
+{% extends "layouts/base.html" %} {% block content %}
+
+<div class="planet">
+  <div class="planet__wrapper">
+    <nav>
+      <ul>
+        <li>
+          <a href="#">overview</a>
+        </li>
+        <li>
+          <a href="#">structure</a>
+        </li>
+        <li>
+          <a href="#">surface</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="planet__inner">
+      <article>
+        <div class="planet__image">
+          <img src="{{images.planet}}" alt="{{name}}" />
+        </div>
+        <div class="planet__content">
+          <h2>{{name}}</h2>
+          <p>{{overview.content}}</p>
+        </div>
+      </article>
+      <article>
+        <div class="planet__image">
+          <img src="{{images.internal}}" alt="{{name}}" />
+        </div>
+        <div class="planet__content">
+          <h2>{{name}}</h2>
+          <p>{{structure.content}}</p>
+        </div>
+      </article>
+      <article>
+        <div class="planet__image">
+          <img src="{{images.geology}}" alt="{{name}}" />
+        </div>
+        <div class="planet__content">
+          <h2>{{name}}</h2>
+          <p>{{geology.content}}</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</div>
+
+{% include "partials/footer.html" %} {% endblock %}

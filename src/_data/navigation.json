@@ -1,0 +1,36 @@
+{
+  "items": [
+    {
+      "name": "mercury",
+      "url": "/"
+    },
+    {
+      "name": "venus",
+      "url": "/venus/"
+    },
+    {
+      "name": "earth",
+      "url": "/earth"
+    },
+    {
+      "name": "mars",
+      "url": "/mars"
+    },
+    {
+      "name": "jupiter",
+      "url": "/jupiter"
+    },
+    {
+      "name": "saturn",
+      "url": "/saturn"
+    },
+    {
+      "name": "uranus",
+      "url": "/uranus"
+    },
+    {
+      "name": "neptune",
+      "url": "/neptune"
+    }
+  ]
+}
